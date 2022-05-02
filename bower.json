@@ -1,0 +1,21 @@
+{
+  "name": "HN_OE50_PHP-Laptop-Store",
+  "description": "",
+  "main": "",
+  "authors": [
+    "doanthaitan1807 <doanthaitan1234@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/doanthaitan1234/HN_OE50_PHP-Laptop-Store",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "elaa-admin": "https://github.com/doanthaitan1234/elaa-admin.git"
+  }
+}

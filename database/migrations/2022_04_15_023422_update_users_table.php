@@ -15,7 +15,7 @@ class UpdateUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('phone')->after('password');
-            $table->enum('status', [0, 1])->default(1)->after('phone')->comment('1: active, 0: deactice');
+            $table->tinyInteger('status')->default(1)->after('phone')->comment('1: active, 0: deactice');
             $table->foreignId('role_id')->after('status')->constrained()->onUpdate('cascade')->onDelete('cascade');            
         });
     }

@@ -35,5 +35,6 @@ class UserSeeder extends Seeder
         ];
         DB::table('users')->delete();
         DB::table('users')->insert($users);
+        User::factory()->count(10)->create();
     }  
 }

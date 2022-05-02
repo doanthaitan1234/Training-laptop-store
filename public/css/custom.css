@@ -1,0 +1,97 @@
+.font-size-20 {
+  font-size: 1.5em !important;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.image-cover {
+  position: relative;
+  padding: 0 10px;
+}
+.image-cover .remove {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+.image-cover .remove .icon-remove {
+  font-size: 20px;
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+.image-cover .remove:hover {
+  cursor: pointer;
+}
+.image-cover .remove:hover .icon-remove {
+  transform: scale(1.2);
+}
+
+.btn-show {
+  cursor: pointer;
+}
+
+.action-group .btn-add {
+  padding: 5px 20px;
+}
+.action-group .btn-reset {
+  padding: 5px 20px;
+}
+
+.mini-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  /* fallback */
+  max-height: 32px;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.select-cover {
+  padding: 0 15px;
+  padding-left: 75%;
+  margin-bottom: 25px;
+}
+
+.content {
+  background-color: #f1f2f7;
+}
+
+.icon-dots-cover {
+  padding-top: 7px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.your-rating-title {
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.your-rating-cover {
+  font-size: 30px;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.pe-1 {
+  padding-right: 0.25rem !important;
+}
+
+.ps-1 {
+  padding-left: 0.25rem !important;
+}

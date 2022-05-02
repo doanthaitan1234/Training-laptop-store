@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Role;
+use App\Models\Rating;
+use App\Models\Order;
+use App\Models\Cart;
 
 class User extends Authenticatable
 {
@@ -49,5 +52,25 @@ class User extends Authenticatable
     public function role()
     {
         return $this->belongsTo(Role::class);
+    }
+
+    public function rating()
+    {
+        return $this->hasMany(Rating::class);
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    public function getAllUsersWithoutMe()
+    {
+        return User::where('id', '<>', Auth::user()->id)->get();
+    }
+
+    public function cart()
+    {
+        return $this->hasMany(Cart::class);
     }
 }

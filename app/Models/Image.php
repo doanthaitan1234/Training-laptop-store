@@ -13,5 +13,14 @@ class Image extends Model
         'name',
         'relation_id',
         'type',
+        'path',
     ];
+
+    public static function getImages($id)
+    {
+        return Image::where('relation_id', $id)->get();
+    }
+
+    
+    
 }
